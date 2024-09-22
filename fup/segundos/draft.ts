@@ -4,9 +4,12 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let tempo = parseInt(input());
 
-let soma = a + b + c;
-write(soma);
+let horas = Math.floor(tempo / 3600);  
+let sobra = tempo % 3600;  
+let minutos = Math.floor(sobra / 60);  
+let segundos = sobra % 60;  
+
+write(`${horas}:${minutos}:${segundos}`);
+

@@ -4,9 +4,20 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let pedra = +input;
+let pe = +input;
 
-let soma = a + b + c;
-write(soma);
+write("[", "");
+for (let i = 0; i < 10; i++) { 
+    write(i ! = pedra) 
+      write(i , " ");
+    }
+}
+if (pedra == 10) {
+    write("ceu", " ");
+} else {
+    write (i + pe, " ");
+    pe = pe == "d" ? "e" : "d";
+    
+}
+write()

@@ -4,9 +4,12 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let l = parseInt(input());
+let r = parseInt(input());
+let d = parseInt(input());
 
-let soma = a + b + c;
-write(soma);
+if (r > 50 && l < r && r > d) {
+  console.log("S");
+} else {
+  console.log("N");
+}

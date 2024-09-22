@@ -4,9 +4,6 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
-
-let soma = a + b + c;
-write(soma);
+let tc= +input ();
+let tf= tc * 1.8 + 32
+console.log(tf.toFixed(6));

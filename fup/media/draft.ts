@@ -4,9 +4,11 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let m = parseInt(input());
+let n = parseInt(input());
 
-let soma = a + b + c;
-write(soma);
+let media = (m + n) / 2;
+let MediaArr = media.toFixed(1); 
+
+write(MediaArr);
+

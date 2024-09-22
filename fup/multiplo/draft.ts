@@ -4,9 +4,10 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let num = parseInt(input())
 
-let soma = a + b + c;
-write(soma);
+if (num % 7 == 0) {
+  console.log("SIM")
+} else {
+  console.log("NAO")
+}

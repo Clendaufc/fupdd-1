@@ -1,20 +1,67 @@
 {
     "expanded": [
         "caminho-base",
-        "main_op"
+        "main_vet_iii",
+        "main_sel_ii"
     ],
     "tasks": {
-        "tres": "2:0:0"
+        "tres": "10:0:100",
+        "resto": "10:0:100",
+        "media": "10:0:100",
+        "sobrou": "10:0:100",
+        "segundos": "10:0:100",
+        "celsius": "10:0:100",
+        "pintando": "10:0:100",
+        "bala": "10:0:100",
+        "max": "10:0:100",
+        "ou": "10:0:100",
+        "positivo": "10:0:100",
+        "multiplo": "10:0:100",
+        "nulo": "10:0:100",
+        "calculadora": "10:0:100",
+        "quantos": "10:0:100",
+        "impar": "10:0:100",
+        "arredondar": "10:0:100",
+        "mumia": "10:0:100",
+        "final": "10:0:100",
+        "trabalhando": "8:0:94",
+        "varetas": "10:0:100",
+        "loop_i": "10:0:100",
+        "loop_iii": "10:0:100",
+        "pares": "10:0:100",
+        "filhos": "10:0:100",
+        "zigzag": "10:0:100",
+        "vet_i": "10:0:100",
+        "vet_ii": "10:0:100",
+        "dieta": "10:0:100",
+        "dindin": "10:0:100",
+        "revolta": "10:0:100",
+        "josephus": "1:0:0",
+        "xuxa": "10:0:100",
+        "inverte": "10:0:100",
+        "quebrada": "10:0:0",
+        "operacoes": "10:0:0",
+        "data": "10:0:0",
+        "opala": "10:0:0",
+        "tv": "10:0:100",
+        "impedido": "10:0:100",
+        "chaves": "10:0:100",
+        "morangos": "10:0:100",
+        "par": "10:0:100"
     },
     "flags": {
         "minimum": 0,
         "reward": 0,
         "percent": 0,
         "admin": 0,
-        "config": 0,
+        "config": 1,
         "skills": 0
     },
-    "new_items": [],
+    "new_items": [
+        "recursao",
+        "vetor_busca",
+        "ponteiros"
+    ],
     "lang": "ts",
-    "index": 2
+    "index": 29
 }

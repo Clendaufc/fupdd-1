@@ -4,9 +4,11 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let xA = parseFloat(input())
+let yA = parseFloat(input())
+let xB = parseFloat(input())
+let yB = parseFloat(input())
 
-let soma = a + b + c;
-write(soma);
+let distacia = Math.sqrt(Math.pow(xB - xA, 2) + Math.pow(yB - yA, 2));
+
+console.log(distacia.toFixed(2))

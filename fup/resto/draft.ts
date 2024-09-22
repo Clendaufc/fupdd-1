@@ -4,9 +4,9 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+let n = parseInt(input())
+let d = parseInt(input())
 
-let soma = a + b + c;
-write(soma);
+let r = n / d
+let res = n % d
+console.log( Math.floor(r) + " " + res);

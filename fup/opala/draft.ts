@@ -4,9 +4,10 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
-
-let soma = a + b + c;
-write(soma);
+let a = +input()
+let b = +input()
+let c = +input()
+let tempo = (b) / 60
+let distanciapercorrida = (a) * tempo
+let desempenho = distanciapercorrida / c
+write(desempenho.toFixed(2))

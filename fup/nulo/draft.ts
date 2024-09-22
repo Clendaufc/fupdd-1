@@ -4,9 +4,13 @@ let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
 let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
 
-let soma = a + b + c;
-write(soma);
+let num = parseInt(input())
+
+if (num == 0) {
+  console.log("0")
+} else if (num > 0) {
+  console.log("+")
+} else {
+  console.log("-")
+}

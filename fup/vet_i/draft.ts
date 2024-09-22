@@ -1,0 +1,16 @@
+function input(): string { let X: any = input; X.L = X.L || require("fs").readFileSync(0).toString().split(/\r?\n/); return X.L.shift(); }
+// function input(): string { let X: any = input; X.P = X.P || require("readline-sync"); return X.P.question() }
+function write(text: any, endl="\n") { process.stdout.write("" + text + endl); }
+export {};
+
+let n = +input(); 
+let vetor: number[] = []; 
+
+for (let i = 0; i < n; i++) {
+    let elemento = +input();
+    vetor.push(elemento); 
+}
+
+for (let i = 0; i < vetor.length; i++) {
+    console.log(vetor[i]);
+}
