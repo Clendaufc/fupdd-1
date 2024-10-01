@@ -1,6 +1,7 @@
 {
     "expanded": [
-        "caminho-base"
+        "caminho-base",
+        "main_sel_ii"
     ],
     "tasks": {
         "tres": "10:0:100",
@@ -29,7 +30,7 @@
         "varetas": "10:0:100",
         "bhaskara": "7:0:100",
         "cortada": "10:0:100",
-        "goiabas": "10:0:100",
+        "goiabas": "0:0:100",
         "salario": "10:0:100",
         "loop_i": "10:0:100",
         "loop_ii": "10:0:100",
@@ -80,5 +81,5 @@
         "ponteiros"
     ],
     "lang": "ts",
-    "index": 4
+    "index": 14
 }
