@@ -1,8 +1,6 @@
 {
     "expanded": [
-        "caminho-base",
-        "main_sel_ii",
-        "main_rep"
+        "caminho-base"
     ],
     "tasks": {
         "tres": "10:0:100",
@@ -29,9 +27,9 @@
         "final": "10:0:100",
         "trabalhando": "10:0:94",
         "varetas": "10:0:100",
-        "bhaskara": "7:0:100",
+        "bhaskara": "8:0:100",
         "cortada": "10:0:100",
-        "goiabas": "0:0:100",
+        "goiabas": "10:0:100",
         "salario": "10:0:100",
         "loop_i": "10:0:100",
         "loop_ii": "10:0:100",
@@ -50,11 +48,14 @@
         "fatores": "9:0:100",
         "vet_i": "10:0:100",
         "vet_ii": "10:0:100",
+        "vet_iii": "0:0:75",
+        "apertada": "0:0:20",
         "dieta": "10:0:100",
-        "patas": "9:0:100",
+        "patas": "10:0:100",
         "dindin": "9:0:100",
         "revolta": "9:0:100",
-        "cartas": "9:0:100",
+        "cartas": "8:0:100",
+        "pedra": "7:0:100",
         "xuxa": "10:0:100",
         "inverte": "10:0:100",
         "quebrada": "10:0:100",
@@ -82,5 +83,5 @@
         "ponteiros"
     ],
     "lang": "ts",
-    "index": 19
+    "index": 3
 }
