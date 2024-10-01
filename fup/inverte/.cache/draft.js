@@ -21,11 +21,14 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let caractere = input();
-if (caractere >= "a" && caractere <= "z") {
-  console.log(caractere.toUpperCase());
-} else if (caractere >= "A" && caractere <= "Z") {
-  console.log(caractere.toLowerCase());
-} else {
-  console.log(caractere);
+function main() {
+  let caractere = input();
+  if (caractere >= "a" && caractere <= "z") {
+    console.log(caractere.toUpperCase());
+  } else if (caractere >= "A" && caractere <= "Z") {
+    console.log(caractere.toLowerCase());
+  } else {
+    console.log(caractere);
+  }
 }
+main();

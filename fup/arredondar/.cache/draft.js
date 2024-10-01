@@ -21,8 +21,11 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let call = input();
-let numb = +input();
-if (call == "r") console.log(Math.round(numb));
-if (call == "c") console.log(Math.ceil(numb));
-if (call == "f") console.log(Math.floor(numb));
+function main() {
+  let call = input();
+  let numb = +input();
+  if (call == "r") console.log(Math.round(numb));
+  if (call == "c") console.log(Math.ceil(numb));
+  if (call == "f") console.log(Math.floor(numb));
+}
+main();

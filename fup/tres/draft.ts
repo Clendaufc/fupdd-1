@@ -1,12 +1,14 @@
-let _cin_ : string[] = [];
-try { _cin_ = require("fs").readFileSync(0).toString().split(/\r?\n/); } catch(e){}
-let input = () : string => _cin_.length === 0 ? "" : _cin_.shift()!;
-let write = (text: any, end:string="\n")=> process.stdout.write("" + text + end);
+function input(): string { let X: any = input; X.L = X.L || require("fs").readFileSync(0).toString().split(/\r?\n/); return X.L.shift(); } // _TEST_ONLY_
+// function input(): string { let X: any = input; X.P = X.P || require("readline-sync"); return X.P.question() } // _FREE_ONLY_
+function write(text: any, endl="\n") { process.stdout.write("" + text + endl); }
 export {};
 
-let a = parseInt(input());
-let b = parseInt(input());
-let c = parseInt(input());
+function main() {
 
-let soma = a + b + c;
-write(soma);
+    let a = parseInt(input());
+    let b = parseInt(input());
+    let c = parseInt(input());
+    
+    let soma = a + b + c;
+    write(soma);}
+main();

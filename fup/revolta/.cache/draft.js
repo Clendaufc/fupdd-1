@@ -21,21 +21,24 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let tamanho = +input();
-let soldados = 0;
-let rebeldes = 0;
-for (let i = 0; i < tamanho; i++) {
-  let numero = +input();
-  if (numero % 2 === 0) {
-    rebeldes += numero;
+function main() {
+  let tamanho = +input();
+  let soldados = 0;
+  let rebeldes = 0;
+  for (let i = 0; i < tamanho; i++) {
+    let numero = +input();
+    if (numero % 2 === 0) {
+      rebeldes += numero;
+    } else {
+      soldados += numero;
+    }
+  }
+  if (soldados > rebeldes) {
+    console.log("soldados");
+  } else if (rebeldes > soldados) {
+    console.log("rebeldes");
   } else {
-    soldados += numero;
+    console.log("empate");
   }
 }
-if (soldados > rebeldes) {
-  console.log("soldados");
-} else if (rebeldes > soldados) {
-  console.log("rebeldes");
-} else {
-  console.log("empate");
-}
+main();

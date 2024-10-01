@@ -21,14 +21,17 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let l1 = +input();
-let a1 = +input();
-let l2 = +input();
-let a2 = +input();
-let area1 = l1 * a1;
-let area2 = l2 * a2;
-if (area1 >= area2) {
-  console.log(area1);
-} else {
-  console.log(area2);
+function main() {
+  let l1 = +input();
+  let a1 = +input();
+  let l2 = +input();
+  let a2 = +input();
+  let area1 = l1 * a1;
+  let area2 = l2 * a2;
+  if (area1 >= area2) {
+    console.log(area1);
+  } else {
+    console.log(area2);
+  }
 }
+main();

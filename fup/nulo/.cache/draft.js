@@ -13,18 +13,22 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var draft_exports = {};
 module.exports = __toCommonJS(draft_exports);
-let _cin_ = [];
-try {
-  _cin_ = require("fs").readFileSync(0).toString().split(/\r?\n/);
-} catch (e) {
+function input() {
+  let X = input;
+  X.L = X.L || require("fs").readFileSync(0).toString().split(/\r?\n/);
+  return X.L.shift();
 }
-let input = () => _cin_.length === 0 ? "" : _cin_.shift();
-let write = (text, end = "\n") => process.stdout.write("" + text + end);
-let num = parseInt(input());
-if (num == 0) {
-  console.log("0");
-} else if (num > 0) {
-  console.log("+");
-} else {
-  console.log("-");
+function write(text, endl = "\n") {
+  process.stdout.write("" + text + endl);
 }
+function main() {
+  let num = parseInt(input());
+  if (num == 0) {
+    console.log("0");
+  } else if (num > 0) {
+    console.log("+");
+  } else {
+    console.log("-");
+  }
+}
+main();

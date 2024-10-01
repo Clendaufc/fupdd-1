@@ -21,12 +21,15 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let n = +input();
-let vetor = [];
-for (let i = 0; i < n; i++) {
-  let elemento = +input();
-  vetor.push(elemento);
+function main() {
+  let n = +input();
+  let vetor = [];
+  for (let i = 0; i < n; i++) {
+    let elemento = +input();
+    vetor.push(elemento);
+  }
+  for (let i = 0; i < vetor.length; i++) {
+    console.log(vetor[i]);
+  }
 }
-for (let i = 0; i < vetor.length; i++) {
-  console.log(vetor[i]);
-}
+main();

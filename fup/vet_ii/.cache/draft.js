@@ -21,11 +21,14 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let n = +input();
-if (n > 0) {
-  let elementos = input().split(" ").map(Number);
-  let vetor = elementos.slice(0, n);
-  console.log(`[ ${vetor.join(" ")} ]`);
-} else {
-  console.log(`[ ]`);
+function main() {
+  let n = +input();
+  if (n > 0) {
+    let elementos = input().split(" ").map(Number);
+    let vetor = elementos.slice(0, n);
+    console.log(`[ ${vetor.join(" ")} ]`);
+  } else {
+    console.log(`[ ]`);
+  }
 }
+main();

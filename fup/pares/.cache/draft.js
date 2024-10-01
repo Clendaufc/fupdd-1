@@ -21,17 +21,20 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let a = +input();
-let b = +input();
-let soma = +input();
-if (a > b) {
-  console.log("invalido");
-  process.exit(0);
+function main() {
+  let a = +input();
+  let b = +input();
+  let soma = +input();
+  if (a > b) {
+    console.log("invalido");
+    process.exit(0);
+  }
+  if (a % 2 !== 0) {
+    a += 1;
+  }
+  for (let i = a; i <= b; i += 2) {
+    soma += i;
+  }
+  console.log(soma);
 }
-if (a % 2 !== 0) {
-  a += 1;
-}
-for (let i = a; i <= b; i += 2) {
-  soma += i;
-}
-console.log(soma);
+main();

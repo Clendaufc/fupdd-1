@@ -21,7 +21,10 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let numero = +input();
-if (numero > 0) console.log("positivo");
-if (numero < 0) console.log("negativo");
-if (numero == 0) console.log("nulo");
+function main() {
+  let numero = +input();
+  if (numero > 0) console.log("positivo");
+  if (numero < 0) console.log("negativo");
+  if (numero == 0) console.log("nulo");
+}
+main();

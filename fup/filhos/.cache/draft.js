@@ -21,9 +21,12 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let fmn = +input();
-let quanfilhos = +input();
-let fmv = fmn + (quanfilhos - 1) * 2;
-for (let i = fmn; i <= fmv; i += 2) {
-  console.log(i);
+function main() {
+  let fmn = +input();
+  let quanfilhos = +input();
+  let fmv = fmn + (quanfilhos - 1) * 2;
+  for (let i = fmn; i <= fmv; i += 2) {
+    console.log(i);
+  }
 }
+main();

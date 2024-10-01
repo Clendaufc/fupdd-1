@@ -21,9 +21,12 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let numero = +input();
-if (numero % 2 === 0) {
-  console.log("PAR");
-} else {
-  console.log("IMPAR");
+function main() {
+  let numero = +input();
+  if (numero % 2 === 0) {
+    console.log("PAR");
+  } else {
+    console.log("IMPAR");
+  }
 }
+main();

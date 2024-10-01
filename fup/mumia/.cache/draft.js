@@ -21,16 +21,19 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let nome = input();
-let idade = input();
-if (idade < 12) {
-  write(nome + " eh crianca");
-} else if (idade < 18) {
-  write(nome + " eh jovem");
-} else if (idade < 65) {
-  write(nome + " eh adulto");
-} else if (idade < 1e3) {
-  write(nome + " eh idoso");
-} else if (idade > 1e3) {
-  write(nome + " eh mumia");
+function main() {
+  let nome = input();
+  let idade = input();
+  if (idade < 12) {
+    write(nome + " eh crianca");
+  } else if (idade < 18) {
+    write(nome + " eh jovem");
+  } else if (idade < 65) {
+    write(nome + " eh adulto");
+  } else if (idade < 1e3) {
+    write(nome + " eh idoso");
+  } else if (idade > 1e3) {
+    write(nome + " eh mumia");
+  }
 }
+main();

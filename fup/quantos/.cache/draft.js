@@ -21,15 +21,18 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let a = +input();
-let b = +input();
-let c = +input();
-let iguais;
-if (a === b && b === c) {
-  iguais = 3;
-} else if (a === b || b === c || a === c) {
-  iguais = 2;
-} else {
-  iguais = 0;
+function main() {
+  let a = +input();
+  let b = +input();
+  let c = +input();
+  let iguais;
+  if (a === b && b === c) {
+    iguais = 3;
+  } else if (a === b || b === c || a === c) {
+    iguais = 2;
+  } else {
+    iguais = 0;
+  }
+  console.log(iguais);
 }
-console.log(iguais);
+main();

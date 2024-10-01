@@ -21,7 +21,10 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let a = +input();
-let b = +input();
-let maior = Math.max(a, b);
-console.log(maior);
+function main() {
+  let a = +input();
+  let b = +input();
+  let maior = Math.max(a, b);
+  console.log(maior);
+}
+main();

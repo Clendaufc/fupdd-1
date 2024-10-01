@@ -21,19 +21,22 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let p = +input();
-let d1 = +input();
-let d2 = +input();
-if (p == 0)
-  if ((d1 + d2) % 2 == 0) {
-    console.log(0);
-  } else {
-    console.log(1);
-  }
-if (p == 1) {
-  if ((d1 + d2) % 2 == 0) {
-    console.log(1);
-  } else {
-    console.log(0);
+function main() {
+  let p = +input();
+  let d1 = +input();
+  let d2 = +input();
+  if (p == 0)
+    if ((d1 + d2) % 2 == 0) {
+      console.log(0);
+    } else {
+      console.log(1);
+    }
+  if (p == 1) {
+    if ((d1 + d2) % 2 == 0) {
+      console.log(1);
+    } else {
+      console.log(0);
+    }
   }
 }
+main();

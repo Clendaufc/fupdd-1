@@ -13,26 +13,30 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var draft_exports = {};
 module.exports = __toCommonJS(draft_exports);
-let _cin_ = [];
-try {
-  _cin_ = require("fs").readFileSync(0).toString().split(/\r?\n/);
-} catch (e) {
+function input() {
+  let X = input;
+  X.L = X.L || require("fs").readFileSync(0).toString().split(/\r?\n/);
+  return X.L.shift();
 }
-let input = () => _cin_.length === 0 ? "" : _cin_.shift();
-let write = (text, end = "\n") => process.stdout.write("" + text + end);
-let nota1 = +input();
-let nota2 = +input();
-let notaf = +input();
-let media = (nota1 + nota2) / 2;
-let mediaf = (media + notaf) / 2;
-if (media >= 7) {
-  console.log("aprovado");
-} else if (media > 4 && media < 7) {
-  if (mediaf >= 5) {
-    console.log("aprovado na final");
+function write(text, endl = "\n") {
+  process.stdout.write("" + text + endl);
+}
+function main() {
+  let nota1 = +input();
+  let nota2 = +input();
+  let notaf = +input();
+  let media = (nota1 + nota2) / 2;
+  let mediaf = (media + notaf) / 2;
+  if (media >= 7) {
+    console.log("aprovado");
+  } else if (media > 4 && media < 7) {
+    if (mediaf >= 5) {
+      console.log("aprovado na final");
+    } else {
+      console.log("reprovado na final");
+    }
   } else {
-    console.log("reprovado na final");
+    console.log("reprovado");
   }
-} else {
-  console.log("reprovado");
 }
+main();

@@ -21,9 +21,12 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let numero = +input();
-if (numero == 3 || numero == 5) {
-  console.log("SIM");
-} else {
-  console.log("NAO");
+function main() {
+  let numero = +input();
+  if (numero == 3 || numero == 5) {
+    console.log("SIM");
+  } else {
+    console.log("NAO");
+  }
 }
+main();

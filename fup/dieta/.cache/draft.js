@@ -21,11 +21,14 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-let quan = +input();
-let Tcalorias = 0;
-for (let i = 0; i < quan; i++) {
-  let Dcalorias = +input();
-  Tcalorias += Dcalorias;
+function main() {
+  let quan = +input();
+  let Tcalorias = 0;
+  for (let i = 0; i < quan; i++) {
+    let Dcalorias = +input();
+    Tcalorias += Dcalorias;
+  }
+  let media = Tcalorias / quan;
+  console.log(media.toFixed(1));
 }
-let media = Tcalorias / quan;
-console.log(media.toFixed(1));
+main();
