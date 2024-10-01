@@ -1,7 +1,8 @@
 {
     "expanded": [
         "caminho-base",
-        "main_sel_ii"
+        "main_sel_ii",
+        "main_rep"
     ],
     "tasks": {
         "tres": "10:0:100",
@@ -81,5 +82,5 @@
         "ponteiros"
     ],
     "lang": "ts",
-    "index": 14
+    "index": 19
 }

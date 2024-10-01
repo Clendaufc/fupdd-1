@@ -3,11 +3,10 @@ function input(): string { let X: any = input; X.L = X.L || require("fs").readFi
 function write(text: any, endl="\n") { process.stdout.write("" + text + endl); }
 export {};
 
-function main() {
-    let [NumA, NumB] = input().split(" ").map(Number);
-    write("[", " ");
-    for (let i = NumA; i > NumB; i--) {
-      write(i, " ");
-    }
-    write("]");}
-main();
+let [NumA, NumB] = input().split(' ').map(Number);
+
+write ("[", " ")
+for (let i = NumA; i > NumB; i--){
+write(i," ");
+}
+write ("]")

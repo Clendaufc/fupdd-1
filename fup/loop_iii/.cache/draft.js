@@ -21,12 +21,9 @@ function input() {
 function write(text, endl = "\n") {
   process.stdout.write("" + text + endl);
 }
-function main() {
-  let [NumA, NumB] = input().split(" ").map(Number);
-  write("[", " ");
-  for (let i = NumA; i > NumB; i--) {
-    write(i, " ");
-  }
-  write("]");
+let [NumA, NumB] = input().split(" ").map(Number);
+write("[", " ");
+for (let i = NumA; i > NumB; i--) {
+  write(i, " ");
 }
-main();
+write("]");
