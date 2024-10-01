@@ -3,7 +3,6 @@ function input(): string { let X: any = input; X.L = X.L || require("fs").readFi
 function write(text: any, endl="\n") { process.stdout.write("" + text + endl); }
 export {};
 
-function main() {
     let hora = + input();
     let min = + input();
     let dia = + input();
@@ -18,4 +17,3 @@ function main() {
     ano = String(ano).padStart(2, '0');
     
     console.log(`${hora}:${min} ${dia}/${mes}/${ano}`)}
-main();

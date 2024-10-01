@@ -27,6 +27,7 @@
         "final": "10:0:100",
         "trabalhando": "10:0:94",
         "varetas": "10:0:100",
+        "bhaskara": "7:0:100",
         "cortada": "10:0:100",
         "goiabas": "10:0:100",
         "salario": "10:0:100",
@@ -34,12 +35,17 @@
         "loop_ii": "10:0:100",
         "loop_iii": "10:0:100",
         "loop_v": "10:0:100",
+        "loop_iv": "8:0:100",
         "pares": "10:0:100",
         "sapatos": "10:0:100",
         "filhos": "10:0:100",
+        "ceu": "8:0:100",
+        "esconde": "8:0:100",
         "zigzag": "10:0:100",
         "colorido": "10:0:100",
         "fuga": "10:0:100",
+        "sapinho": "8:0:100",
+        "fatores": "9:0:100",
         "vet_i": "10:0:100",
         "vet_ii": "10:0:100",
         "dieta": "10:0:100",
@@ -68,11 +74,11 @@
         "skills": 0
     },
     "new_items": [
-        "laco_controle",
         "recursao",
-        "ponteiros",
-        "vetor_busca"
+        "laco_controle",
+        "vetor_busca",
+        "ponteiros"
     ],
     "lang": "ts",
-    "index": 0
+    "index": 4
 }
